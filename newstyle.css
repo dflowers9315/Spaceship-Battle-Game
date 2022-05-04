@@ -1,0 +1,65 @@
+.gameBoard{
+    border:solid white;
+    margin:1em;
+     display:flex;
+    justify-content: space-between;
+}
+.legend{
+    border:solid blue;
+    border-radius:22px;
+    margin:2em;
+    height:22vh;
+    background-color:black;
+    display:flex;
+   
+}
+
+.us{
+    margin:1em;
+    width:30px;
+
+}
+.them{
+    border:solid salmon;
+    margin:1em;
+    width:210px;
+}
+
+.score{
+    border:solid yellow;
+    border-radius:22px;
+    margin:1em;
+    padding:1em;
+    color:white;
+}
+.ship{
+    height:120px;
+    margin-top:20vh;
+    animation-name: alienAttack;
+    animation-duration: 3s; infinate;
+
+}
+.alienContainer{
+    margin:1em;
+    justify-content: space-between;
+    color:lime;
+   padding:1em;
+animation-name: alienAttack;
+/* animation-duration: 3s;*/
+
+   animation: alienAttack 3s 1s infinite;
+}
+.alien{
+    height:40px;
+}
+
+@keyframes alienAttack{
+        from {
+          transform: translateX(0%);
+        }
+      
+        to {
+          transform: translateX(100%);
+        }
+    }
+
